@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "builds": [
+        { "src": "api/license.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+        { "src": "/api/validate", "dest": "/api/license.js" }
+    ]
+}
